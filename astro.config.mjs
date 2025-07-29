@@ -4,6 +4,11 @@ import { defineConfig, fontProviders } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 
 import mdx from '@astrojs/mdx';
+// @ts-expect-error No TS for this one
+import codeFigure from 'remark-code-figure';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypeSlug from 'rehype-slug';
+import rehypeExternalLinks from 'rehype-external-links';
 
 // https://astro.build/config
 export default defineConfig({
@@ -24,5 +29,10 @@ export default defineConfig({
       },
     ]
   },
-  integrations: [mdx({syntaxHighlight: false})]
+  markdown: { 
+    remarkPlugins: [codeFigure],
+    rehypePlugins: [rehypeSlug, [rehypeExternalLinks, {target: "_blank"}], [rehypeAutolinkHeadings, {behavior: "wrap"}]],
+    syntaxHighlight: false
+  },
+  integrations: [mdx({ syntaxHighlight: false })]
 });
