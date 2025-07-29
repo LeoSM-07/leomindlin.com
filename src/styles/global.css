@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
-a[href]:hover {
-	color: var(--color-accent);
+@layer base {
+	a[href]:hover {
+		color: var(--color-accent);
+	}
 }
 
 :focus-visible {
@@ -20,8 +22,8 @@ a[href]:hover {
 }
 
 @theme {
-	--default-font-family: "Public Sans";
-	--default-mono-font-family: "JetBrainsMono Nerd Font";
+	--default-font-family: "Public Sans", sans-serif;
+	--default-mono-font-family: "JetBrains Mono", monospace;
 
 	--color-accent: var(--color-blue-700);
 	--color-foreground: var(--color-zinc-950);
