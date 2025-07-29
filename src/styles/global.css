@@ -22,8 +22,8 @@
 }
 
 @theme {
-	--default-font-family: "Public Sans", sans-serif;
-	--default-mono-font-family: "JetBrains Mono", monospace;
+	--default-font-family: var(--font-public-sans), sans-serif;
+	--default-mono-font-family: var(--font-jetbrains-mono), monospace;
 
 	--color-accent: var(--color-blue-700);
 	--color-foreground: var(--color-zinc-950);
