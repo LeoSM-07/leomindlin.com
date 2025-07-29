@@ -14,16 +14,17 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<Layout>
-	<article class="prose mx-auto">
+<Layout title={post.data.title}>
+	<article class="prose mx-auto w-full">
 		<h1 class="text-balance border-y p-4 text-center">{post.data.title}</h1>
 		<div class="text-center">
 			Léo Mindlin — {post.data.publishDate.toLocaleDateString()}
 		</div>
 
-		<p>{post.data.description}</p>
-
-		<hr />
+		{post.data.description && (
+			<p>{post.data.description}</p>
+			<hr />
+		)}
 		<Content />
 	</article>
 </Layout>

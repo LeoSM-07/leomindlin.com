@@ -572,6 +572,10 @@
 	:where(figure):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
 		margin-top: 2em;
 		margin-bottom: 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		place-items: center;
 	}
 
 	:where(.prose > :first-child):not(:where([class~="not-prose"], [class~="not-prose"] *)) {

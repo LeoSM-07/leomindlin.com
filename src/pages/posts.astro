@@ -16,7 +16,13 @@ const posts = (await getCollection("posts")).sort(
 						<a class="flex w-full flex-col" href={`/post/${post.data.slug}`}>
 							{post.data.title} <br />
 							<span class="text-muted-foreground">
-								Published {post.data.publishDate.toLocaleDateString()} • {300}{" "}
+								Published {post.data.publishDate.toLocaleDateString()} •{" "}
+								{
+									(post.body + "" + post.data.description)
+										.trim()
+										.split(/\s+/)
+										.filter((word) => word.length > 0).length
+								}{" "}
 								Words
 							</span>
 						</a>

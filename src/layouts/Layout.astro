@@ -17,6 +17,13 @@ const links = {
 };
 
 const posts = await getCollection("posts");
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title = "Léo Mindlin", description } = Astro.props;
 ---
 
 <!doctype html>
@@ -26,8 +33,8 @@ const posts = await getCollection("posts");
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Léo Mindlin</title>
-
+		<title>{title}</title>
+		<meta name="description" content={description} />
 		<Font cssVariable="--font-jetbrains-mono" />
 		<Font cssVariable="--font-public-sans" preload />
 	</head>
