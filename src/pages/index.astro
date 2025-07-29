@@ -1,7 +1,32 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+
+console.log(import.meta.env.MODE);
 ---
 
 <Layout>
-	<div>Hello World</div>
+	<main class="space-y-4">
+		<p>
+			Studying software engineering at McGill University. Usually between Los
+			Angeles and Montreal.
+		</p>
+
+		<section>
+			<h2 class="font-semibold">Current Occupations</h2>
+			<ul class="list-inside list-disc pl-4">
+				<li>
+					Ground Station Project Lead <a
+						target="_blank"
+						href="https://mcgillrocketteam.com/">@McGill Rocket Team</a
+					>
+				</li>
+				<li>
+					Software Engeering Intern in Test <a
+						target="_blank"
+						href="https://www.internetbrands.com/">@Internet Brands</a
+					> (yes this is a real company)
+				</li>
+			</ul>
+		</section>
+	</main>
 </Layout>
