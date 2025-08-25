@@ -2,7 +2,7 @@
 slug: tm-tc-system
 title: Designing an Average Telemetry/Telecommand System
 description: "I work on the Ground Station GUI at the [McGill Rocket Team](https://mcgillrocketteam.com/) (MRT). That generally entails two responsibilities: a frontend and a backend. The frontend is responsible for displaying information and allowing for the control of a system."
-publishDate: 2025-07-29
+publishDate: 2025-08-01
 ---
 
 ## What's the Issue

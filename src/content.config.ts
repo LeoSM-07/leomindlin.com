@@ -8,7 +8,7 @@ const posts = defineCollection({
   schema: z.object({
     slug: z.string(),
     title: z.string(),
-    description: z.string().optional(),
+    description: z.string().nullable().optional(),
     publishDate: z.date(),
   })
 });

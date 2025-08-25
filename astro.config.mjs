@@ -9,6 +9,8 @@ import codeFigure from 'remark-code-figure';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import rehypeExternalLinks from 'rehype-external-links';
+// @ts-expect-error No TS for this one
+import rehypeFigure from "@microflash/rehype-figure";
 
 // https://astro.build/config
 export default defineConfig({
@@ -32,7 +34,12 @@ export default defineConfig({
   },
   markdown: { 
     remarkPlugins: [codeFigure],
-    rehypePlugins: [rehypeSlug, [rehypeExternalLinks, {target: "_blank"}], [rehypeAutolinkHeadings, {behavior: "wrap"}]],
+    rehypePlugins: [
+      rehypeSlug, 
+      [rehypeExternalLinks, {target: "_blank"}], 
+      [rehypeAutolinkHeadings, {behavior: "wrap"}],
+      rehypeFigure
+    ],
     syntaxHighlight: false
   },
   integrations: [mdx({ syntaxHighlight: false })]

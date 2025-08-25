@@ -3,13 +3,13 @@ import Layout from "@/layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("posts")).sort(
-	(a, b) => a.data.publishDate.getTime() - b.data.publishDate.getTime(),
+	(a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime(),
 );
 ---
 
 <Layout>
 	<main>
-		<ol class="list-decimal pl-7">
+		<ol class="list-decimal space-y-4 pl-7">
 			{
 				posts.map((post) => (
 					<li>
