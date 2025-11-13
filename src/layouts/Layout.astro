@@ -48,7 +48,9 @@ const { title = "Léo Mindlin", description } = Astro.props;
 				!isPost && "border-b pb-4",
 			)}
 		>
-			<SiteTitle>Léo Mindlin</SiteTitle>
+			<a href="/">
+				<SiteTitle>Léo Mindlin</SiteTitle>
+			</a>
 
 			{
 				posts.length > 0 && (
