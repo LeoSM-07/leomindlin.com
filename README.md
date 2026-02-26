@@ -1,46 +1,26 @@
-# Astro Starter Kit: Basics
+# Léo Mindlin
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+Studying Software Engineering at McGill University. Born and raised in Los Angeles, studying in Montreal.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## Current Occupations
 
-Inside of your Astro project, you'll see the following folders and files:
+- Software Development Intern at [Botpress](https://botpress.com/)
+- Ground Station Project Lead at the [McGill Rocket Team](https://mcgillrocketteam.com/)
+- Bachelor of Engineering, Co-op in Software Engineering at [McGill University](https://mcgill.ca/)
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Prior Occupations
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- Web Design for the [McGill Interstellar Flight Experimental Research Group](https://interstellarflight.space/)
+- Software Engineering Intern in Test at [Internet Brands](https://www.internetbrands.com/)
+- Freelance Web Design for [TellAVision Agency](https://tellavision.agency/)
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## Links
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Email: [hello@leomindlin.com](mailto:hello@leomindlin.com)
+- [GitHub](https://github.com/LeoSM-07)
+- [LinkedIn](https://www.linkedin.com/in/leo-mindlin/)
+- [Twitter](https://x.com/mindlin_xyz)
